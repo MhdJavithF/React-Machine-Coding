@@ -5,6 +5,7 @@ import './App.css'
 import Counter from './Components/Counter'
 import Dropdown from './Components/Dropdown'
 import RefDemo from './Components/RefDemo'
+import ArrayFlatten from './Components/ArrayFlatten'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,8 @@ function App() {
     <>
       {/* <Counter /> */}
       {/* <Dropdown /> */}
-      <RefDemo />
+      {/* <RefDemo /> */}
+      <ArrayFlatten />
     </>
   )
 }
