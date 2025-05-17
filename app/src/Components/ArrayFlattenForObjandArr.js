@@ -20,6 +20,23 @@ const flattenMixed = (input) => {
     return result;
 };
 
+const flattenNumbers = (input) => {
+  const result = [];
+
+  const flatten = (arr) => {
+    for (const item of arr) {
+      if (Array.isArray(item)) {
+        flatten(item);
+      } else {
+        result.push(item);
+      }
+    }
+  };
+
+  flatten(input);
+  return result;
+};
+
 useEffect(() => {
     const result = flattenMixed(categoryTree); // or any array-like structure
     setFlattenArray(result);
