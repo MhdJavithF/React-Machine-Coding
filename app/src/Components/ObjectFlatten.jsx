@@ -44,7 +44,7 @@ const ObjectFlatten = () => {
                 <button type='submit'>Submit</button>
             </div>
         </form>
-        <pre>{output && JSON.stringify(output,null, 1)}</pre>
+        <pre style={{fontSize:"18px"}}>{output && JSON.stringify(output,null, 1)}</pre>
     </>
   )
 }
