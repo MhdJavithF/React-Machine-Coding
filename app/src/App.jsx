@@ -9,6 +9,7 @@ import ArrayFlatten from './Components/ArrayFlatten'
 import ObjectFlatten from './Components/ObjectFlatten'
 import CountDownTimer from './Components/CountDownTimerButtons'
 import CountDown from './Components/CountDown'
+import KanbanByClick from './Components/KanbanByClick'
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
       {/* <RefDemo /> */}
       {/* <ArrayFlatten /> */}
       {/* <ObjectFlatten /> */}
-      <CountDownTimer />
-      <CountDown />
+      {/* <CountDownTimer /> */}
+      {/* <CountDown /> */}
+      <KanbanByClick />
     </>
   )
 }
