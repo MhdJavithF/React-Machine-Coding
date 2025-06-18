@@ -10,6 +10,8 @@ import ObjectFlatten from './Components/ObjectFlatten'
 import CountDownTimer from './Components/CountDownTimerButtons'
 import CountDown from './Components/CountDown'
 import KanbanByClick from './Components/KanbanByClick'
+import Pokiemon from './PS-practice/Pokiemon'
+import InputForm from './PS-practice/InputForm'
 
 
 function App() {
@@ -24,7 +26,9 @@ function App() {
       {/* <ObjectFlatten /> */}
       {/* <CountDownTimer /> */}
       {/* <CountDown /> */}
-      <KanbanByClick />
+      {/* <KanbanByClick /> */}
+      {/* <Pokiemon /> */}
+      <InputForm />
     </>
   )
 }
