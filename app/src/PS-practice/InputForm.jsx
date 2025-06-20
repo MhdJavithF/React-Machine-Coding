@@ -5,8 +5,8 @@ const InputForm = () => {
   return (
     <>
         <form onSubmit={e => {e.preventDefault(); console.log(valRef.current.value)}}>
-            <input type='text' placeholder='abc@gmail.com' ref={valRef} />
-            <button type='submit'>click</button>
+            <input type="text" placeholder="abc@gmail.com" ref={valRef} />
+            <button>click</button>
         </form>
     </>
   )

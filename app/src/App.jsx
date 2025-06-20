@@ -11,7 +11,7 @@ import CountDownTimer from './Components/CountDownTimerButtons'
 import CountDown from './Components/CountDown'
 import KanbanByClick from './Components/KanbanByClick'
 import Pokiemon from './PS-practice/Pokiemon'
-import InputForm from './PS-practice/InputForm'
+import InputForm from './PS-practice/inputForm'
 
 
 function App() {
