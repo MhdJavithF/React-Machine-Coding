@@ -21,7 +21,7 @@ const flattenMixed = (input) => {
 };
 
 const flattenNumbers = (input) => {
-  const result = [];
+  let result = [];
 
   const flatten = (arr) => {
     for (const item of arr) {
