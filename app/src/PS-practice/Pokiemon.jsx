@@ -16,7 +16,7 @@ const Pokiemon = () => {
         setDetails(data);
     }
   return (
-    <div>
+    <div className='animated-bg'>
         <select onChange={handleSelect} style={{fontSize:"20px",padding:"10px"}}>
             {datas?.map(pokie => (
                 <option key={pokie.name} value={pokie.url}>{pokie.name}</option>
