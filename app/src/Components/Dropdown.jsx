@@ -23,7 +23,8 @@ const Dropdown = () => {
     }, [isOpen]);
 
     return (
-        <>
+        <div className='animated-bg'>
+
             <h1>Dropdown with Outside <br></br> click close</h1>
             <div ref={dropRef}>
                 <button style={{ display: 'block', width: '500px' }} onClick={toggling}>Select Options</button>
@@ -35,7 +36,7 @@ const Dropdown = () => {
                     </div>
                 }
             </div>
-        </>
+        </div>
     )
 }
 

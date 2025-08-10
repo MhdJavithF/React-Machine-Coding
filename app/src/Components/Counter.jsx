@@ -25,7 +25,7 @@ const Counter = () => {
         }
     }
   return (
-    <>
+    <div className='animated-bg'>
         <h1>Counter with Undo and Redo</h1>
         <p>{currentValue}</p>
         <div>
@@ -38,7 +38,7 @@ const Counter = () => {
             <button disabled={position === history.length - 1} onClick={redo}>redo</button>
         </div>
         
-    </>
+    </div>
   )
 }
 

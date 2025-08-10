@@ -36,7 +36,7 @@ const ObjectFlatten = () => {
     }
 
   return (
-    <>
+    <div className='animated-bg'>
         <h1>Object Flatten Inspector</h1>
         <form onSubmit={handleSubmit}>
             <textarea value={input||''} onChange={(e) => setInput(e.target.value)} style={{width:'450px', height:'300px', fontSize:'24px', padding:'10px'}}/>
@@ -45,7 +45,7 @@ const ObjectFlatten = () => {
             </div>
         </form>
         <pre style={{fontSize:"18px"}}>{output && JSON.stringify(output,null, 1)}</pre>
-    </>
+    </div>
   )
 }
 

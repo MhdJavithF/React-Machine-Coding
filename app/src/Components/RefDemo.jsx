@@ -15,7 +15,7 @@ const RefDemo = () => {
     }, []);
 
     return (
-        <div>
+        <div className='animated-bg'>
             <h1>Ref Demo</h1>
             <button onClick={() => setShow(prev => !prev)}>
                 Toggle Dropdown

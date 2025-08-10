@@ -83,8 +83,8 @@ const ArrayFlatten = () => {
         
     },[])
   return (
-    <div>
-        <h1>Array flattening without Array.flat()</h1>
+    <div className='animated-bg'>
+        <h3 className="text-center mb-4 gradient-title">Array flattening without Array.flat()</h3>
         <select style={{width:"200px", height:"40px", fontSize:"20px", fontWeight:"600"}}>
         {
             flattenArray.map(item => (

@@ -20,7 +20,7 @@ const CountDown = () => {
     }, []);
 
     return (
-        <div>
+        <div className='animated-bg'>
             <h1>Count Down Timer</h1>
             <h1>{time}</h1>
         </div>

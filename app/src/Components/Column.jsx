@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Column = ({title, tasks, onMove}) => {
   return (
-    <div>
+      <div className='animated-bg'>
         <h3>{title}</h3>
         {tasks.map(task => (
             <div key={task} style={{
