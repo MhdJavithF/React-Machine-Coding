@@ -1,3 +1,4 @@
+import { Button } from 'bootstrap';
 import React, { useRef } from 'react'
 
 const InputForm = () => {
@@ -5,8 +6,8 @@ const InputForm = () => {
   return (
     <>
         <form onSubmit={e => {e.preventDefault(); console.log(valRef.current.value)}}>
-            <input type="text" placeholder="abc@gmail.com" ref={valRef} />
-            <button>click</button>
+            <input className='p-2 ' type="text" placeholder="abc@gmail.com" ref={valRef} />
+            <button className='btn bg-primary text-white'>Click</button>
         </form>
     </>
   )

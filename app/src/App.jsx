@@ -12,24 +12,31 @@ import CountDown from './Components/CountDown'
 import KanbanByClick from './Components/KanbanByClick'
 import Pokiemon from './PS-practice/Pokiemon'
 import InputForm from './PS-practice/inputForm'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Components/Home'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      {/* <Counter /> */}
-      {/* <Dropdown /> */}
-      {/* <RefDemo /> */}
-      {/* <ArrayFlatten /> */}
-      {/* <ObjectFlatten /> */}
-      {/* <CountDownTimer /> */}
-      {/* <CountDown /> */}
-      {/* <KanbanByClick /> */}
-      {/* <Pokiemon /> */}
-      <InputForm />
-    </>
+    <BrowserRouter>
+    
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/counter" element={<Counter />} />
+        <Route path="/dropdown" element={<Dropdown />} />
+        <Route path="/refdemo" element={<RefDemo />} />
+        <Route path="/arrflatten" element={<ArrayFlatten />} />
+        <Route path="/objfllaten" element={<ObjectFlatten />} />
+        <Route path="/countdowntimer" element={<CountDownTimer />} />
+        <Route path="/countdown" element={<CountDown />} />
+        <Route path="/kanban" element={<KanbanByClick />} />
+        <Route path="/pokiemon" element={<Pokiemon />} />
+        <Route path="/inputform" element={<InputForm />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
