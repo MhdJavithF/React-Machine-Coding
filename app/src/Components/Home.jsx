@@ -1,12 +1,16 @@
-import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import { FiExternalLink } from 'react-icons/fi';
+import { SearchContext } from '../Context/SearchContext';
 
 const Home = () => {
+
+    const { searchTerm } = useContext(SearchContext);
+
     const cards = [
         { title: "Counter", desc: "Counter with undo and redo functionalities", path: "/counter" },
         { title: "Dropdown", desc: "Dropdown with Outside click close", path: "/dropdown" },
@@ -26,6 +30,10 @@ const Home = () => {
         'gradient-4', 'gradient-5', 'gradient-6'
     ];
 
+    const filteredCards = cards.filter(card =>
+    card.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
     return (
         <div className='animated-bg'>
             <h1 className="text-center mb-4 gradient-title">
@@ -33,11 +41,11 @@ const Home = () => {
             </h1>
 
             <Row xs={1} md={2} lg={4} className="g-4">
-                {cards.map((card, index) => (
+                {filteredCards.map((card, index) => (
                     <Col key={index}>
                         <Card
                             className={`custom-card ${gradientClasses[index % gradientClasses.length]}`}
-                            style={{ maxHeight: '190px', minHeight: '190px', maxWidth: '450px' }} >
+                            style={{ maxHeight: '190px', minHeight: '190px', maxWidth: '450px', minWidth: '400px' }} >
                             <Card.Header>{card.title}</Card.Header>
                             <Card.Body>
                                 <Card.Title>{card.desc}</Card.Title>
