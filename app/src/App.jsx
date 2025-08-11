@@ -15,6 +15,7 @@ import InputForm from './PS-practice/inputForm'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './Components/Navbar'
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/counter" element={<Counter />} />

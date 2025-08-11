@@ -18,7 +18,7 @@ const Home = () => {
         { title: "Kanban Board", desc: "Moving forward task by clicking on task", path: "/kanban" },
         { title: "Pokemon", desc: "Fetching API by selecting options", path: "/pokiemon" },
         { title: "Input Form", desc: "Moving forward task by clicking on task", path: "/inputform" },
-        { title: "Loading...", desc: "Coming soon...", path: "#" },
+        { title: "Loading...", desc: "Coding soon...", path: "#" },
     ];
 
     const gradientClasses = [

@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.logo-icon {border-radius: 50%;}
+
+.logo-name {font-size: 25px; font-weight: 500;}
+
 .gradient-title {
   background: linear-gradient(
     -45deg,
