@@ -12,7 +12,7 @@ const Home = () => {
     const { searchTerm } = useContext(SearchContext);
 
     const cards = [
-        { title: "Counter", desc: "Counter with undo and redo functionalities", path: "/counter" },
+        { title: "Counter", desc: "Counter with [undo] and [redo] functionalities", path: "/counter" },
         { title: "Dropdown", desc: "Dropdown with Outside click close", path: "/dropdown" },
         { title: "Toggle", desc: "Toggling by using useRef", path: "/toggle" },
         { title: "Array Flatten", desc: "Array flattening without inbuilt Array.flat()", path: "/arrflatten" },

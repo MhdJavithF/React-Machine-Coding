@@ -28,9 +28,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/counter" element={<Counter />} />
         <Route path="/dropdown" element={<Dropdown />} />
-        <Route path="/refdemo" element={<RefDemo />} />
+        <Route path="/toggle" element={<RefDemo />} />
         <Route path="/arrflatten" element={<ArrayFlatten />} />
-        <Route path="/objfllaten" element={<ObjectFlatten />} />
+        <Route path="/objflatten" element={<ObjectFlatten />} />
         <Route path="/countdowntimer" element={<CountDownTimer />} />
         <Route path="/countdown" element={<CountDown />} />
         <Route path="/kanban" element={<KanbanByClick />} />
