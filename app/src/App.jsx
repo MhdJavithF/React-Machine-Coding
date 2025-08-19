@@ -23,24 +23,23 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    // <BrowserRouter>
-    //   <NavBar />
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route path="/counter" element={<Counter />} />
-    //     <Route path="/dropdown" element={<Dropdown />} />
-    //     <Route path="/toggle" element={<RefDemo />} />
-    //     <Route path="/arrflatten" element={<ArrayFlatten />} />
-    //     <Route path="/objflatten" element={<ObjectFlatten />} />
-    //     <Route path="/countdowntimer" element={<CountDownTimer />} />
-    //     <Route path="/countdown" element={<CountDown />} />
-    //     <Route path="/kanban" element={<KanbanByClick />} />
-    //     <Route path="/pokiemon" element={<Pokiemon />} />
-    //     <Route path="/inputform" element={<InputForm />} />
-    //   </Routes>
-    // </BrowserRouter>
-      <ChessBoard />
-
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/counter" element={<Counter />} />
+        <Route path="/dropdown" element={<Dropdown />} />
+        <Route path="/toggle" element={<RefDemo />} />
+        <Route path="/arrflatten" element={<ArrayFlatten />} />
+        <Route path="/objflatten" element={<ObjectFlatten />} />
+        <Route path="/countdowntimer" element={<CountDownTimer />} />
+        <Route path="/countdown" element={<CountDown />} />
+        <Route path="/kanban" element={<KanbanByClick />} />
+        <Route path="/pokiemon" element={<Pokiemon />} />
+        <Route path="/inputform" element={<InputForm />} />
+        <Route path="/chessboard" element={<ChessBoard />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
