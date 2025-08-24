@@ -7,6 +7,7 @@ const Dropdown = () => {
     const toggling = () => setIsOpen(!isOpen);
 
     useEffect(() => {
+        // throw new Error('hi');
         if (!isOpen) return;
 
         const handleClickOutside = (e) => {

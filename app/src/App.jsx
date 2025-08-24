@@ -17,6 +17,7 @@ import Home from './Components/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/Navbar'
 import ChessBoard from './Components/ChessBoard'
+import Todo from './Components/Todo'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <Todo/>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
