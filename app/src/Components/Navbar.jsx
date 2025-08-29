@@ -16,12 +16,12 @@ function NavBar() {
                 <Navbar.Brand href="/">
                     <img
                         alt="logo-jf"
-                        src="./../src/assets/favicon.png"
+                        src="/favicon.png"
                         width="40"
                         height="40"
                         className="d-inline-block align-top logo-icon"
-                    />{' '}
-                    <span className='logo-name'>MJ React.js</span>
+                    />
+                    <span className="logo-name">MJ React.js</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
