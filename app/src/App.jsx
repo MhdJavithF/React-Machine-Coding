@@ -11,7 +11,7 @@ import CountDownTimer from './Components/CountDownTimerButtons'
 import CountDown from './Components/CountDown'
 import KanbanByClick from './Components/KanbanByClick'
 import Pokiemon from './PS-practice/Pokiemon'
-import InputForm from './PS-practice/inputForm'
+import InputForm from './PS-practice/InputForm'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
