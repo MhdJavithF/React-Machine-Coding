@@ -47,7 +47,7 @@ const Home = () => {
                     <Col key={index}>
                         <Card
                             className={`custom-card ${gradientClasses[index % gradientClasses.length]}`}
-                            style={{ maxHeight: '190px', minHeight: '190px', maxWidth: '350px', minWidth: '350px' }} >
+                            style={{ maxHeight: '190px', minHeight: '190px', maxWidth: '350px', minWidth: '300px' }} >
                             <Card.Header>{card.title}</Card.Header>
                             <Card.Body>
                                 <Card.Title>{card.desc}</Card.Title>
