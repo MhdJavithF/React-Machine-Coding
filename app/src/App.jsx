@@ -25,7 +25,6 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Todo/>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -40,6 +39,7 @@ function App() {
         <Route path="/pokiemon" element={<Pokiemon />} />
         <Route path="/inputform" element={<InputForm />} />
         <Route path="/chessboard" element={<ChessBoard />} />
+        <Route path="/todo" element={<Todo/>} />
       </Routes>
     </BrowserRouter>
   )

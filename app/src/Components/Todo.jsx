@@ -21,15 +21,14 @@ const Todo = () => {
     }
 
   return (
-    <div>
-        <ul>
-            {todos?.map((t,idx) => (
-                <div key={t.id}>
-                    <li>{t.todo}</li>
-                    <button onClick={()=>{handleDelete(idx)}}>Delete</button>
-                </div>
-            ))}
-        </ul>
+    <div className='animated-bg'>
+        <h1>TODO List</h1>
+        {todos?.map((t,idx) => (
+            <div key={t.id}>
+                <span style={{padding:'20px', fontSize: '20px', color: 'white'}}>{t.todo}</span>
+                <button onClick={()=>{handleDelete(idx)}}>Delete</button>
+            </div>
+        ))}
     </div>
   )
 }

@@ -22,6 +22,8 @@ const Home = () => {
         { title: "Kanban Board", desc: "Moving forward task by clicking on task", path: "/kanban" },
         { title: "Pokemon", desc: "Fetching API by selecting options", path: "/pokiemon" },
         { title: "Input Form", desc: "Moving forward task by clicking on task", path: "/inputform" },
+        { title: "Chess Board CSS", desc: "React.js chess board grid-pattern CSS", path: "/chessboard" },
+        { title: "TODO", desc: "Todo app with deleting function on click", path: "/todo" },
         { title: "Loading...", desc: "Coding soon...", path: "#" },
     ];
 

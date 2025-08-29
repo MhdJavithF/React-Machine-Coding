@@ -42,7 +42,8 @@ const ChessBoard = () => {
     console.log(cells2);
     
     return (
-        <div>
+        <div className='animated-bg'>
+            <h1 style={{color:'white', padding:'20px'}}>Chess Board</h1>
             <div className='board'>{cells}</div>
         </div>
     )
